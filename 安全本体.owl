@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#"
+     xml:base="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HasActOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HasActOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HasResponseTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#事件对象"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HasResponseTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HasResponseTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#事件对象"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#EnvironmentEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#EnvironmentEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#自然灾害事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#FamilyEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#FamilyEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#FoodEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#FoodEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HealthEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HealthEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#WorkplaceAndLivingPlaceEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#WorkplaceAndLivingPlaceEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#workEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#workEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#个人财产 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#个人财产">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#事件对象 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#事件对象">
+        <rdfs:comment>受害者</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#土地事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#土地事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#投资事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#投资事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#时间信息 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#时间信息"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#社会安全事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#社会安全事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#空间信息 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#空间信息"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#自然灾害事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#自然灾害事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#安全事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#金融事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#金融事件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#FamilyEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#FoodEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#HealthEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#WorkplaceAndLivingPlaceEvent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#workEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#个人财产"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#土地事件"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#投资事件"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#金融事件"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#人身安全事件"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#社会安全事件"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#经济事件"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomis/ontologies/2018/8/untitled-ontology-30#自然灾害事件"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
